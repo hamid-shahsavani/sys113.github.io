@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <title>gsm project</title>
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div id="particles-js"></div>
+    <a href="#main-category" class="notification">
+      <div class="toast__container">
+        <div class="toast__cell">
+          <div class="toast toast--blue add-margin">
+            <div class="toast__icon">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+            <div class="toast__content">
+              <p class="toast__type">new update</p>
+              <p class="toast__message">add all odin version in samsung category!</p>
+            </div>
+            <div class="toast__close">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.642 15.642" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 15.642 15.642">
+            <path fill-rule="evenodd" d="M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z"></path>
+          </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <!------------------------------------------------------- header ------------------------------------------------------------->
+    <header class="header-desktop">
+      <nav>
+        <div class="nav__container">
+          <a href="#home" class="nav__item">
+            <div class="nav__item-icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </div>
+            <div class="nav__item-name">home</div>
+          </a>
+          <a href="#comment" class="nav__item">
+            <div class="nav__item-icon">
+              <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            </div>
+            <div class="nav__item-name">comments</div>
+          </a>
+          <a href="#contributers" class="nav__item">
+            <div class="nav__item-icon">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+            <div class="nav__item-name">contributers</div>
+          </a>
+          <a href="#main-category" class="nav__item">
+            <div class="nav__item-icon">
+              <ion-icon name="apps-outline" role="img" class="md hydrated" aria-label="apps outline"></ion-icon>
+            </div>
+            <div class="nav__item-name">category</div>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home section" id="home">
+        <div class="page-title">
+          <div>
+            <ion-icon name="home-outline" role="img" class="md hydrated" aria-label="home outline"></ion-icon>
+              <span>home</span>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 main-content">
+              <span class="text-bold">mashhad-gsm tools</span>
+              <span class="text-regular">download free and one-click all gsm tools!</span>
+              <div class="main-button">
+                <a href="#">
+                  <ion-icon name="accessibility-outline"></ion-icon>
+                  <span>sponser</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+                <a href="#main-category">
+                  <ion-icon name="apps-outline"></ion-icon>
+                  <span>category</span>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 main-image">
+              <lottie-player class="home-image-animation" src="json/home.json" background="transparent" speed="0.5" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="scroll-down" id="scroll-down-to-comment"></button>
+      </section>
+
+      <div class="home-and-comment-seprator"></div>
+
+      <section class="comment section" id="comment">
+        <div class="page-title">
+          <div>
+            <ion-icon name="chatbubble-ellipses-outline" role="img" class="md hydrated" aria-label="chatbubble ellipses outline"></ion-icon>
+            <span>comments</span>
+          </div>
+        </div>
+        <div class="large-container">
+          <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="img/comment/img.jpg" alt="" />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Hamid Shahsavani</span>
+                  <div class="blog-slider__title">From Iran</div>
+                  <div class="blog-slider__text">
+                    thank you for creating this site so that I can easily download everything i need.
+                  </div>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="img/comment/img.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Hamid Shahsavani</span>
+                  <div class="blog-slider__title">From iran</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img
+                    src="img/comment/img.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Hamid Shahsavani</span>
+                  <div class="blog-slider__title">From iran</div>
+                  <div class="blog-slider__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae voluptate repellendus magni illo ea animi?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
+
+        <div class="thumb-layer paroller">
+          <figure class="image-background-comment"><img src="http://t.commonsupport.com/adro/images/resource/user-thumbs.png" alt=""></figure>
+        </div>
+        </div>
+        <button type="button" class="scroll-down" id="scroll-down-to-contributers"></button>
+      </section>
+
+      <div class="comment-and-contributers-seprator"></div>
+
+      <section class="contributers section" id="contributers">
+        <div class="page-title">
+          <div>
+            <ion-icon name="people-outline" role="img" class="md hydrated" aria-label="people outline"></ion-icon>
+            <span>contributers</span>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 swiper-container">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="picture">
+                    <img src="img/contributers/shahsavani.jpg" alt="">
+                  </div>
+                  <div class="detail">
+                    <span>Hamid Shahsavani</span>
+                    <span>Developer</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="picture">
+                    <img src="img/contributers/rohi.jpg" alt="">
+                  </div>
+                  <div class="detail">
+                    <span>Mohammad Rohi</span>
+                    <span>Sponser</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="col-md-6 contribute-img">
+              <lottie-player src="json/contribute.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop autoplay></lottie-player>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="scroll-down" id="scroll-down-to-main-category"></button>
+      </section>
+
+      <div class="contributers-and-main_category-seprator"></div>
+
+      <section class="main-category section" id="main-category">
+        <div class="page-title">
+          <div>
+            <ion-icon name="apps-outline"></ion-icon>
+            <span>category</span>
+          </div>
+        </div>
+        <div class="container-flouid">
+          <div class="row cards">
+            <div class="card col-md-2">
+              <a href="#samsung-category">
+                <img src="img/main-category/img.jpg">
+                <div class="card-title samsung-category-title">
+                  <span>samsung tools</span>
+                </div>
+              </a>
+            </div>
+            <div class="card col-md-2">
+              <a href="https/google.com/">
+                <img src="img/main-category/img.jpg">
+                <div class="card-title samsung-category-title">
+                  <span>xiaomi tools</span>
+                </div>
+              </a>
+            </div>
+            <div class="card col-md-2">
+              <a href="https/google.com/">
+                <img src="img/main-category/img.jpg">
+                <div class="card-title samsung-category-title">
+                  <span>huawei tools</span>
+                </div>
+              </a>
+            </div>
+            <div class="card col-md-2">
+              <a href="https/google.com/">
+                <img src="img/main-category/img.jpg">
+                <div class="card-title samsung-category-title">
+                  <span>samsung tools</span>
+                </div>
+              </a>
+            </div>
+            <div class="card col-md-2">
+              <a href="https/google.com/">
+                <img src="img/main-category/img.jpg">
+                <div class="card-title samsung-category-title">
+                  <span>samsung tools</span>
+                </div>
+              </a>
+            </div>
+            <div class="card col-md-2">
+              <a href="https/google.com/">
+                <img src="img/main-category/img.jpg">
+                <div class="card-title samsung-category-title">
+                  <span>samsung tools</span>
+                </div>
+              </a>
+            </div>
+            <div class="card col-md-2">
+              <a href="https/google.com/">
+                <img src="img/main-category/img.jpg">
+                <div class="card-title samsung-category-title">
+                  <span>samsung tools</span>
+                </div>
+              </a>
+            </div>
+            <div class="card col-md-2">
+              <a href="https/google.com/">
+                <img src="img/main-category/img.jpg">
+                <div class="card-title samsung-category-title">
+                  <span>samsung tools</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="scroll-down" id="scroll-down-to-comment"></button>
+      </section>
+
+      <div class="main_category-and-samsung-tools-category-seprator"></div>
+      
+      <section class="samsung-category section" id="samsung-category">
+        <div class="page-title">
+          <div>
+            <ion-icon name="apps-outline"></ion-icon>
+              <span>samsung tools</span>
+          </div>
+        </div>
+        <section class="carousel-category">
+          <div class="owl-carousel" id="owl-carousel-category">
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+            <div class="tool-category">
+              <div class="program-image">
+                <div class="download-list">
+                  <div class="trigger">
+                    <div class="download-text">
+                      <span class="a"><ion-icon name="cloud-download-outline"></ion-icon></span>
+                      <span class="b">download list</span>
+                    </div>
+                    <ul class="locations">
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                      <li><a href="#">Version 0.1.9</a></li>
+                      <li><a href="#">Version 0.1.8</a></li>
+                      <li><a href="#">Version 0.1.7</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <a class="image-tool">
+                  <img src="img/samsung-category/odin.png">
+                </a>
+  
+              </div>
+              <div class="program-info">
+                <div class="tag">
+                  <a style="background: linear-gradient(to right, #7b4397, #dc2430);" href="#">samsung</a>
+                  <a style="background: linear-gradient(to right, #8e2de2, #4a00e0);" href="#">huawei</a>
+                  <a style="background: linear-gradient(to right, #fe8c00, #f83600);" href="#">windows</a>
+                </div>
+                <span class="name">odin flash tool</span>
+                <p class="information">odin flash tool is an important utility tool designed to flash the firmware on samsung smartphones.</p>
+                <div class="program-contribute">
+                  <img src="https://i.ibb.co/9Z0rXKW/contribute.jpg" class="contribute-face">
+                  <span class="contribute-name">hamid shahsavani</span>
+                  <span class="contribute-level">contribute</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    
+    <footer>
+      <span>&copy;designed by hamid shahsavani</span>
+    </footer>
+    <!---------------------------------------------------- load js code ---------------------------------------------------------->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lottie-player.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
