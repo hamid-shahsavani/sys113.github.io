@@ -185,7 +185,7 @@ $("#scroll-down-to-comment").click(function () {
     {
       scrollTop: $("#comment").offset().top,
     },
-    0
+    300
   );
 });
 
@@ -196,7 +196,7 @@ $("#scroll-down-to-contributers").click(function () {
     {
       scrollTop: $("#contributers").offset().top,
     },
-    0
+    300
   );
 });
 
@@ -205,7 +205,7 @@ $("#scroll-down-to-main-category").click(function () {
     {
       scrollTop: $("#main-category").offset().top,
     },
-    0
+    300
   );
 });
 
@@ -224,3 +224,15 @@ var swiper = new Swiper(".swiper-container", {
     slideShadows: true,
   },
 });
+
+
+$(".image-tool").click(function () {
+  let get_img_src = $(this).children("img").attr("src");
+  $("body").append("<div class='image-tool-lightbox' style='background-image: url(" + get_img_src + ")'></div>");
+  $("body").css('overflow', 'hidden');
+  $(".image-tool-lightbox").click(function () {
+    $(this).remove();
+    $("body").css("overflow", "visible");
+  });
+});
+
