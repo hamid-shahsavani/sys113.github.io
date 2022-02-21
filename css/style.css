@@ -1205,6 +1205,7 @@ size:10px;
   height:50px;
   border-radius:30px;
   height: 100% !important;
+  transition: background .5s;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
