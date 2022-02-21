@@ -457,7 +457,8 @@ nav .nav__item-icon ion-icon {
 /* ------------------------------------------------------------------------ */
 
 .home .main-content {
-  top: 25vh !important;
+  left: 5vh !important;
+  top: 28vh !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
