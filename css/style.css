@@ -1164,7 +1164,7 @@ size:10px;
 
 .menu-toggle #tabs {
   margin: 0 auto 25px auto;
-  width: 659px;
+  width: 665px;
   font-size:20px;
   border-radius:30px;
   height:50px;
@@ -1198,11 +1198,12 @@ size:10px;
 }
 
 .menu-toggle #tabs li.active a {
+  margin: 3px;
   background: #fff;
   color: #222431 !important;
   height:50px;
   border-radius:30px;
-  height: 100% !important;
+  height: 85% !important;
   transition: background .5s;
 }
 
@@ -1225,6 +1226,9 @@ size:10px;
   background-size: 600%;
   box-shadow: inset 0 0 5em rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to right, #294083, #418B56,#4834d4, #eb4d4b, #861a54);
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-name: gradients;
 }
 
 
@@ -1257,6 +1261,7 @@ size:10px;
 }
 
 .image-tool-lightbox {
+  cursor:pointer;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1323,8 +1328,8 @@ size:10px;
   height:453px;
   width:330px;
   overflow-y:scroll !important;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
   border-radius: 0 0 10px 10px;
   font-size: 14px;
   transform: scaley(0);
@@ -1338,7 +1343,7 @@ size:10px;
 
 .download-list .trigger ul.locations::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
 }
 
 .download-list .trigger ul.locations::-webkit-scrollbar-thumb {
@@ -1391,12 +1396,12 @@ size:10px;
 }
 
 .download-list .trigger ul.locations li:hover {
-  border-left: 3px solid rgba(164,164,164,0.9);
+  border-left: 3px solid rgba(107, 107, 107, 0.9);
 }
 
 .download-list .trigger:hover .download-text {
-  color:#222 !important;
-  background: rgba(164,164,164,0.5) !important;
+  color:#eee;
+  background-color: rgba(0, 0, 0, 0.4) !important;
   backdrop-filter: blur(10px);
   width: 330px;
   border-radius: 10px 10px 0 0;
@@ -1429,7 +1434,7 @@ div.download-text span.b {
 /* ------------------------------------------------------------ */
 .program-info {
    position:relative;
-   min-height:230px;
+   min-height:229px;
    overflow:hidden !important;
   animation-duration: 50s;
   animation-iteration-count: infinite;

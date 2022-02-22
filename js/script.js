@@ -165,8 +165,7 @@ $(window)
 
     $.each($section, function (i) {
       if (
-        $browserTop >= $topOffset[i] &&
-        $browserTop < $topOffset[i] + $(this).height()
+        $browserTop >= $topOffset[i] && $browserTop < $topOffset[i] + $(this).height()
       ) {
         $(this).addClass("active");
         $('a[href^="#' + this.id + '"]').addClass("active");
@@ -225,6 +224,7 @@ var swiper = new Swiper(".swiper-container", {
   },
 });
 
+// ----------------------------------------------------------- tools image light-box ----------------------------------------------------------------------
 
 $(".image-tool").click(function () {
   let get_img_src = $(this).children("img").attr("src");
