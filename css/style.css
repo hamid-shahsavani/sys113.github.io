@@ -1127,39 +1127,6 @@ nav.base-menu .nav__item-icon ion-icon {
 }
 
 /* ------------------------------------------------------------------------------- */
-
-.main-category .tools-number span {
-  padding-right:3px !important;
-}
-.main-category .tools-number {
-    z-index: 1;
-    position: absolute;
-    margin-top: 25px;
-    display: flex;
-    right:0px;
-}
-
-.main-category .tools-number div{
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  border-radius: 20px 0px 0px 20px;
-  padding: 10px 0px 10px 10px;
-}
-
-.main-category .tools-number span {
-color: #222431 !important;
-}
-
-.main-category .tools-number ion-icon {
-color: #222431 !important;
-padding: 0 10px;
-font-size:23px;
-}
-
-/* ---------------------------------------------------------------------------------- */
   
 .main-category .page-title {
   z-index: 1;
