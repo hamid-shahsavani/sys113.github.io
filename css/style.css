@@ -277,7 +277,7 @@ a {
   text-decoration: none;
 }
 
-nav {
+nav.base-menu {
   margin-left: 5px;
   display: flex;
   position: relative;
@@ -290,14 +290,14 @@ nav {
   overflow-x: hidden;
   transition: width 300ms ease;
 }
-nav:hover {
+nav.base-menu:hover {
   width: 200px;
 }
-nav:hover .nav__item.active .nav__item-icon,
-nav:hover .nav__item.active .nav__item-name {
+nav.base-menu:hover .nav__item.active .nav__item-icon,
+nav.base-menu:hover .nav__item.active .nav__item-name {
   box-shadow: 0px 0px 15px 5px #0005;
 }
-nav .nav__container {
+nav.base-menu .nav__container {
   display: flex;
   width: 100%;
   height: 100%;
@@ -305,7 +305,7 @@ nav .nav__container {
   justify-content: center;
   flex-direction: column;
 }
-nav .nav__item {
+nav.base-menu .nav__item {
   position: relative;
   display: flex;
   width: 100%;
@@ -315,28 +315,28 @@ nav .nav__item {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-nav .nav__item.active {
+nav.base-menu .nav__item.active {
   padding-left: 10px;
 }
-nav .nav__item.active::after, nav .nav__item.active::before {
+nav.base-menu .nav__item.active::after, nav.base-menu .nav__item.active::before {
   transition: opacity 300ms 150ms ease-in-out;
   opacity: 1;
 }
-nav .nav__item.active * {
+nav.base-menu .nav__item.active * {
   color: #380E95;
   font-weight: 900;
 }
-nav .nav__item.active .nav__item-icon {
+nav.base-menu .nav__item.active .nav__item-icon {
   background-color: #eceff1;
   border-radius: 10px;
 }
-nav .nav__item.active .nav__item-name {
+nav.base-menu .nav__item.active .nav__item-name {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: #eceff1;
   margin-left: 10px;
 }
-nav .nav__item::before, nav .nav__item::after {
+nav.base-menu .nav__item::before, nav.base-menu .nav__item::after {
   position: absolute;
   right: 0;
   width: 30px;
@@ -346,15 +346,15 @@ nav .nav__item::before, nav .nav__item::after {
   opacity: 0;
   transition: opacity 100ms ease-in-out;
 }
-nav .nav__item::before {
+nav.base-menu .nav__item::before {
   top: -30px;
   box-shadow: 15px 15px 0px 0px #eceff1;
 }
-nav .nav__item::after {
+nav.base-menu .nav__item::after {
   bottom: -30px;
   box-shadow: 15px -15px 0px 0px #eceff1;
 }
-nav .nav__item-name {
+nav.base-menu .nav__item-name {
   display: flex;
   flex-grow: 1;
   height: 60px;
@@ -365,7 +365,7 @@ nav .nav__item-name {
   flex-shrink: 0;
   transition: all 300ms ease-in-out;
 }
-nav .nav__item-icon {
+nav.base-menu .nav__item-icon {
   display: flex;
   width: 60px;
   height: 60px;
@@ -374,7 +374,7 @@ nav .nav__item-icon {
   flex-shrink: 0;
   transition: all 300ms ease-in-out;
 }
-nav .nav__item-icon ion-icon {
+nav.base-menu .nav__item-icon ion-icon {
   font-size: 1.5em;
   color: #fff;
 }
@@ -717,7 +717,7 @@ nav .nav__item-icon ion-icon {
     border: 2px solid #f1f1f1;
   }
 
-  .testimonial-carousel .owl-nav {
+  .testimonial-carousel .owl-nav.base-menu {
     position: relative;
     left: 0;
     bottom: 0;
@@ -1193,8 +1193,22 @@ color: #222431 !important;
 
 nav.tools-select-menu {
   background: transparent;
-  width: auto;
+  position: relative;
+  margin: 0 auto 30px auto;
+  width: 780px;
+  overflow-x: scroll;
   height: auto;
+  border: 1px #6e6e6e solid !important;
+  border-radius: 50px;
+}
+
+nav.tools-select-menu::-webkit-scrollbar {
+  display: none;
+}
+
+nav.tools-select-menu::-webkit-scrollbar-track {
+  background: transparent !important;
+  border-radius: 10px;
 }
 
 .menu-toggle {
@@ -1205,15 +1219,14 @@ nav.tools-select-menu {
 }
 
 .menu-toggle #tabs {
-  margin: 0 auto 25px auto;
-  width: 1224px;
+  margin: 0 auto 0px auto;
   font-size:20px;
-  border-radius:30px;
-  height:50px;
+  height:49px;
   border-bottom: 0;
   display: flex;
-  border: 1px #6e6e6e solid !important;
   background: #212636 !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .menu-toggle #tabs::-webkit-scrollbar {
   display: none;
