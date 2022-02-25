@@ -504,12 +504,28 @@ nav.base-menu .nav__item-icon ion-icon {
 .home .main-button a {
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: transparent;
     font-size: 20px;
     font-weight: 700;
     border-radius: 55px;
     padding: 10px;
     margin-left: 23px;
+    border: 1px solid #fff !important;
+    transition: all .2s;
+}
+
+.home .main-button a:hover {
+  background-color: #fff;
+}
+
+.home .main-button a:hover span {
+  color: #222431 !important;
+  transition: all .5s;
+}
+
+.home .main-button a:hover ion-icon {
+  color: #222431 !important;
+  transition: all .5s;
 }
 
 .home .main-button a:hover {
@@ -528,13 +544,13 @@ nav.base-menu .nav__item-icon ion-icon {
 }
 
 .home .main-button a span {
-  color: #222431 !important;
+  color: #fff !important;
 }
 
 .home .main-button ion-icon {
-  color: #222431 !important;
+  color: #fff !important;
   padding: 0 10px;
-    font-size:23px;
+  font-size:23px;
 }
 
 @keyframes slow-show-text {
