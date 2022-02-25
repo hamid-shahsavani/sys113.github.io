@@ -430,7 +430,7 @@ nav.base-menu .nav__item-icon ion-icon {
 /* ------------------------------------------------------------------------ */
 
 .home .main-image {
-  margin-top: 70px;
+  margin-top: 9vh;
   display: flex;
   justify-content: center;
   opacity: 0;
@@ -1025,31 +1025,32 @@ nav.base-menu .nav__item-icon ion-icon {
 
 /* --------------------------------------------------------- */
 
-.contributers::before {
+.home-right::before {
+    left: 7.7vh;
+    top: -9.3vh;
     position : absolute;
-    left: 90px;
-    top: 1%;
-    background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
+    background-image: url(/img/contributers/shape.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 700px;
-    height: 721px;
+    height: 700px;
     content: "";
-    -webkit-animation:spin 25s linear infinite;
-    -moz-animation:spin 25s linear infinite;
-    animation:spin 25s linear infinite;
+    -webkit-animation:spinx 25s linear infinite;
+    -moz-animation:spinx 25s linear infinite;
+    animation:spinx 25s linear infinite;
 }
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
+
+@-moz-keyframes spinx { 
+  100% { -moz-transform: rotate(360deg);} 
 }
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
+@-webkit-keyframes spinx { 
+  100% { -webkit-transform: rotate(360deg); } 
 }
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
+@keyframes spinx { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
 }
 
 /* -------------------------------------------------- */
@@ -1277,7 +1278,6 @@ nav.tools-select-menu::-webkit-scrollbar-track {
 /* ------------------------------------------------------------ */
 
 .download-list {
-  z-index:999!important;
   position:absolute;
 }
 
@@ -1322,6 +1322,7 @@ nav.tools-select-menu::-webkit-scrollbar-track {
 }
 
 .download-list .trigger ul.locations {
+  z-index: 999 !important;
   position: absolute;
   list-style: none;
   height:453px;
