@@ -162,102 +162,6 @@ a {
   color: #fff !important;
 }
 
-/* -------------------------------------- notification ----------------------------- */
-
-.notification {
-  animation: 3s slow-show-notification;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  top:90%;
-  color:#fff;
-  z-index: 10;
-  margin: -10px 0px;
-}
-
-@keyframes slow-show-notification {
-  from { opacity: 0; padding-left: 100px;}
-  to { opacity: 1; padding-left: 0px;}
-}
-
-.toast {
-  position: relative;
-  display: flex;
-  align-items: center;
-  text-align:left;
-  width: 410px !important;
-  height: 70px;
-  background: #fff !important;
-  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.2);
-  border-radius: 5px 15px 15px 5px !important;
-  opacity: 1 !important;
-}
-
----------------------------------------------- disable timer for hide notification ---------------------------------------- */
-
-.toast:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1px;
-    width: 4px;
-    height: 100%;
-
-}
-
-.toast__icon {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    padding: 3px 5px;
-    font-size: 29px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.toast__type {
-  font-family: Chivo-Bold;
-  font-size: 15px;
-  color: #3e3e3e;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.toast__message {
-  font-family: Chivo-Regular;
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #878787;
-}
-
-.toast__content{
-  padding-left:70px;
-  padding-right:60px;
-}
-
-.toast__close {
-    position: absolute;
-    right: 22px;
-    top: 50%;
-    width: 14px;
-    cursor:pointer;
-    height: 14px;
-  fill:#878787;
-    transform: translateY(-50%);
-}
-
-.toast--blue .toast__icon{
-  background-color:#1D72F3;
-}
-
-.toast--blue:before{
-  background-color:#1D72F3;
-}
-
 /* ---------------------------------------- header -------------------------------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
@@ -433,32 +337,15 @@ nav.base-menu .nav__item-icon ion-icon {
   margin-top: 9vh;
   display: flex;
   justify-content: center;
-  opacity: 0;
-  animation: 3s slow-show-image;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
 }
 
-@keyframes slow-show-image {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
 .home-image-animation {
     border-radius: 50%;
     margin-top: -70px;
 }
 
-
-
 /* ------------------------------------------------------------------------ */
-
-.home-left {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .home .main-content {
   left: 5vh !important;
@@ -469,9 +356,19 @@ nav.base-menu .nav__item-icon ion-icon {
   padding-left: 100px;
 }
 
+.update-alert {
+  font-family: 'Chivo-Light';
+  font-size: 17px;
+}
+.update-alert span:nth-child(1) {
+  padding: 2px 4px !important;
+  border: #fff solid 1px;
+  border-radius: 20px;
+}
 .home .main-content .text-bold{
+  margin: 0;
   font-family: Chivo-Bold;
-  font-size: 30px;
+  font-size: 60px;
   opacity: 0;
   padding-top:0px;
   animation: 3s slow-show-text;
@@ -480,21 +377,22 @@ nav.base-menu .nav__item-icon ion-icon {
 }
 
 .home .main-content .text-regular{
+  display: flex;
   font-family: Chivo-Regular;
-  font-size: 24px;
+  font-size: 26px;
   opacity: 0;
   padding-top:100px;
   animation: 2s slow-show-text;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
-  margin: 10px 0 20px 0;
+  margin: 5px 0 20px 0;
 }
 
 /* ------------------------------------------------------------------------ */
 
 .home .main-button {
+  right: -37px;
   display: flex;
-  right: 25px;
   position: relative;
   animation: 2s slow-show-text;
   animation-delay: 0.5s;
@@ -502,13 +400,13 @@ nav.base-menu .nav__item-icon ion-icon {
 }
 
 .home .main-button a {
+    padding: 8px 0px;
     display: flex;
     align-items: center;
     background-color: transparent;
     font-size: 20px;
     font-weight: 700;
     border-radius: 55px;
-    padding: 10px;
     margin-left: 23px;
     border: 1px solid #fff !important;
     transition: all .2s;
@@ -1040,20 +938,26 @@ nav.base-menu .nav__item-icon ion-icon {
 }
 
 /* --------------------------------------------------------- */
-
+ 
+.home-right {
+  position: relative;
+}
 .home-right::before {
-    left: 7.7vh;
-    top: -9.3vh;
-    position : absolute;
-    background-image: url(/img/contributers/shape.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 700px;
-    height: 700px;
-    content: "";
-    -webkit-animation:spinx 25s linear infinite;
-    -moz-animation:spinx 25s linear infinite;
-    animation:spinx 25s linear infinite;
+  right: 0;
+  left:0;
+  bottom: 0;
+  top: 0;
+  margin:auto;
+  position : absolute;
+  background-image: url(/img/contributers/shape.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 650px;
+  height: 650px;
+  content: "";
+  -webkit-animation:spinx 25s linear infinite;
+  -moz-animation:spinx 25s linear infinite;
+  animation:spinx 25s linear infinite;
 }
 
 @-moz-keyframes spinx { 
@@ -1071,15 +975,14 @@ nav.base-menu .nav__item-icon ion-icon {
 
 /* -------------------------------------------------- */
 
-.contributers .swiper-container {
+.contributers .swiper-container-horizontal>.swiper-scrollbar {
+  display: none;
+}
+
+.swiper-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  top:90px !important;
-}
-
-.contributers .swiper-container-horizontal>.swiper-scrollbar {
-  display: none;
 }
 
 .contributers .swiper-slide {
@@ -1243,7 +1146,7 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   color: #222431 !important;
   height:50px;
   border-radius:30px;
-  height: 85% !important;
+  height: 78% !important;
   transition: background .5s;
 }
 
@@ -1575,7 +1478,7 @@ footer span {
 
   /* ------------------   header   --------------------------- */
 
-  header.header-desktop , .scroll-down , .notification{
+  header.header-desktop , .scroll-down{
     display: none !important;
   }
 
