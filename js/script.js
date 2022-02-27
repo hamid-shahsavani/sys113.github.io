@@ -3,21 +3,9 @@ document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'complete') {
     $('body').addClass('loaded');
-    $('body').css({"overflow":"visible"});
+    $('body').css({ "overflow": "visible" });
   }
 }
-
-/* --------------------------------------------------- notification close button ---------------------------------------------- */
-
-jQuery(document).ready(function () {
-  jQuery(".toast__close").click(function (e) {
-    e.preventDefault();
-    var parent = $(this).parent(".toast");
-    parent.fadeOut("slow", function () {
-      $(this).remove();
-    });
-  });
-});
 
 /* ------------------------------------------------------ comment slider slider --------------------------------------------------- */
 
@@ -239,33 +227,43 @@ $(".image-tool").click(function () {
 // ------------------------------------------------------- auto scroll tools menu by click ---------------------------------------------------------------------
 
 $.fn.tabbing = function (options) {
-  var opts = {delayTime : 300};
+  var opts = { delayTime: 300 };
   options = options || {};
-  opts = $.extend(opts,options);    
+  opts = $.extend(opts, options);
   return this.each(function () {
-      $(this).on('click', function (event) {
-          event.preventDefault();
-          var sum = 0;
-          $(this).prevAll().each(function(){  sum += $(this).width();});
-        var get = document.getElementById('tabs').scrollWidth
-          var dist = sum - ( $(this).parent().width() - $(this).width()) / 2;
-        if(dist < 0){
-          dist = 0;
-        }
-        /* else if(dist+sum > get){
-          dist = get-sum+dist+dist;
-        } */
-          $(this).parent().animate({
-              scrollLeft: dist
-          },opts['delayTime']);
-      });
+    $(this).on('click', function (event) {
+      event.preventDefault();
+      var sum = 0;
+      $(this).prevAll().each(function () { sum += $(this).width(); });
+      var get = document.getElementById('tabs').scrollWidth
+      var dist = sum - ($(this).parent().width() - $(this).width()) / 2;
+      if (dist < 0) {
+        dist = 0;
+      }
+      $(this).parent().animate({
+        scrollLeft: dist
+      }, opts['delayTime']);
+    });
   });
 };
 $('#tabs li').tabbing();
 
 
-$('#tabs li').click(function(){
-var  hashit = $(this).find('a').attr('href')
-var autoHeight = $(hashit).height() + 30;
-$('.tab-content').animate({height: autoHeight}, 100);
+$('#tabs li').click(function () {
+  var hashit = $(this).find('a').attr('href')
+  var autoHeight = $(hashit).height() + 30;
+  $('.tab-content').animate({ height: autoHeight }, 100);
+});
+
+// -------------------------------------------------------- show tools with active nav menu -------------------------------------------------------------------------
+
+$('.all-tools-section div').hide();
+$("#icloud").fadeIn(650);
+$("#tabs li a").click(function () {
+  $('.all-tools-section div').hide();
+  $(".menu-toggle #tabs li").removeClass('active');
+  $(this).parent().addClass('active');
+  $(this.getAttribute('href')).fadeIn(650);
+
+
 });

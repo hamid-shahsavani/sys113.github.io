@@ -1080,14 +1080,8 @@ color: #222431 !important;
 /* -------------------------------------------------------------------------------- */
 
 nav.tools-select-menu {
+  position: absolute;
   background: transparent;
-  position: relative;
-  margin: 0 auto 30px auto;
-  width: fit-content;
-  overflow-x: scroll;
-  height: auto;
-  border: 1px #6e6e6e solid !important;
-  border-radius: 50px;
 }
 
 nav.tools-select-menu::-webkit-scrollbar {
@@ -1099,6 +1093,10 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
+.tools-select-menu ul {
+  display: flex;
+}
+
 .menu-toggle {
   top:25px;
   position: relative;
@@ -1106,6 +1104,59 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   justify-content:center;
 }
 
+.menu-toggle #tabs {
+  /* width: 500px; */
+  border: 1px #6e6e6e solid !important;
+  border-radius: 50px;
+  font-size:20px;
+  height:50px;
+  display: flex;
+  background: #212636 !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0px 6px;
+}
+
+.menu-toggle #tabs li a {
+  font-family: 'Chivo-Regular';
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.menu-toggle #tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-toggle #tabs li {
+  width: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle #tabs li.active a {
+  background: #fff;
+  color: #222431 !important;
+  border-radius:30px;
+  height: 75% !important;
+  transition: background .5s;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+.all-tools-section {
+  margin-top:70px !important;
+  color:red !important;
+}
+
+/*
 .menu-toggle #tabs {
   margin: 0 auto 0px auto;
   font-size:20px;
@@ -1118,11 +1169,6 @@ nav.tools-select-menu::-webkit-scrollbar-track {
 }
 .menu-toggle #tabs::-webkit-scrollbar {
   display: none;
-}
-.menu-toggle #tabs li {
-  width: auto;
-  white-space: nowrap;
-  justify-content: center;
 }
 
 .menu-toggle #tabs li a {
@@ -1149,6 +1195,7 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   height: 78% !important;
   transition: background .5s;
 }
+*/
 
 /* ------------------------------------------------------------------------------------------------ */
 
@@ -1157,9 +1204,6 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   padding: 0 !important;
 }
 
-.center-tools-section {
-  margin: 0 105px;
-}
 .tool-category {
   font-family: Chivo-Regular;
   border-radius: 15px !important;
