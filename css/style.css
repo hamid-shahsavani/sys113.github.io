@@ -187,9 +187,7 @@ nav.base-menu {
   position: relative;
   width: 60px;
   height: 330px;
-  background-color: rgb(165 165 165 / 60%);
-  backdrop-filter: blur(10px);
-  opacity: 0.99;
+  background-color: rgb(165 165 165);
   border-radius: 10px 10px 15px 10px;
   overflow-x: hidden;
   transition: width 300ms ease;
@@ -298,7 +296,7 @@ nav.base-menu .nav__item-icon ion-icon {
 .home {
   overflow: hidden;
   padding-top: 90px;
-  height: 100vh;
+  height: 730px;;
   width: 100%;
   color: #fff;
 }
@@ -474,6 +472,7 @@ nav.base-menu .nav__item-icon ion-icon {
   border-radius: 20px;
   cursor: pointer;
   outline: none;
+  z-index: 999 !important;
 }
 
 .scroll-down:before{
@@ -1079,6 +1078,10 @@ color: #222431 !important;
 
 /* -------------------------------------------------------------------------------- */
 
+.all-tools-section {
+  margin-top:70px !important;
+}
+
 nav.tools-select-menu {
   position: absolute;
   background: transparent;
@@ -1105,15 +1108,17 @@ nav.tools-select-menu::-webkit-scrollbar-track {
 }
 
 .menu-toggle #tabs {
-  /* width: 500px; */
+    /*   mobile
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 500px; */
   border: 1px #6e6e6e solid !important;
   border-radius: 50px;
   font-size:20px;
   height:50px;
   display: flex;
   background: #212636 !important;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden !important;
   padding: 0px 6px;
 }
 
@@ -1148,56 +1153,13 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   transition: background .5s;
 }
 
-
-/* ------------------------------------------------------------------- */
-
-.all-tools-section {
-  margin-top:70px !important;
-  color:red !important;
-}
-
-/*
-.menu-toggle #tabs {
-  margin: 0 auto 0px auto;
-  font-size:20px;
-  height:49px;
-  border-bottom: 0;
-  display: flex;
-  background: #212636 !important;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-.menu-toggle #tabs::-webkit-scrollbar {
-  display: none;
-}
-
-.menu-toggle #tabs li a {
-  font-family: 'Chivo-Regular';
-  border: 0;
-  border-radius: 0;
-  cursor: pointer;
-  margin: 0;
-  color:#fff;
-  display: flex;
-  align-items: center;
-}
-
-.menu-toggle #tabs li a:hover {
-  background: transparent;
-}
-
-.menu-toggle #tabs li.active a {
-  margin: 3px;
-  background: #fff;
-  color: #222431 !important;
-  height:50px;
-  border-radius:30px;
-  height: 78% !important;
-  transition: background .5s;
-}
-*/
-
 /* ------------------------------------------------------------------------------------------------ */
+
+.tools-row {
+  position: absolute;
+  width: 100%;
+  left: 7%;
+}
 
 .col-md-3 {
   margin: 10px;
@@ -1212,10 +1174,14 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   box-shadow: 0px 0px 10px 2px #252732 !important;
   overflow:hidden !important;
   background-size: 600%;
-  box-shadow: inset 0 0 5em rgba(0, 0, 0, 0.5);
+  margin: 20px 10px;
 }
 
 /* ------------------------------------------------------------ */
+
+.program-image {
+  position: relative;
+}
 
 .image-tool img {
   cursor: pointer;
@@ -1228,8 +1194,7 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background-color: rgba(75, 75, 75, 0.9);
   position: fixed;
   z-index: 999;
   top:0;
@@ -1288,11 +1253,10 @@ nav.tools-select-menu::-webkit-scrollbar-track {
   z-index: 999 !important;
   position: absolute;
   list-style: none;
-  height:453px;
+  height:455px;
   width:330px;
   overflow-y:scroll !important;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
+  background-color: rgba(83, 85, 85, 0.9);
   border-radius: 0 0 10px 10px;
   font-size: 14px;
   transform: scaley(0);
@@ -1306,7 +1270,6 @@ nav.tools-select-menu::-webkit-scrollbar-track {
 
 .download-list .trigger ul.locations::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(1px);
 }
 
 .download-list .trigger ul.locations::-webkit-scrollbar-thumb {
@@ -1359,13 +1322,12 @@ nav.tools-select-menu::-webkit-scrollbar-track {
 }
 
 .download-list .trigger ul.locations li:hover {
-  border-left: 3px solid rgba(107, 107, 107, 0.9);
+  border-left: 3px solid rgba(73, 73, 73, 0.9);
 }
 
 .download-list .trigger:hover .download-text {
   color:#eee;
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  backdrop-filter: blur(10px);
+  background-color: rgba(45, 52, 54, 0.98) !important;
   width: 330px;
   border-radius: 10px 10px 0 0;
 }
@@ -1520,6 +1482,13 @@ footer span {
 
 @media (max-width: 480px) {
 
+  .menu-toggle #tabs {
+    /*   mobile
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 500px; */
+  }
+  
   /* ------------------   header   --------------------------- */
 
   header.header-desktop , .scroll-down{

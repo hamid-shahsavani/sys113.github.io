@@ -257,13 +257,11 @@ $('#tabs li').click(function () {
 
 // -------------------------------------------------------- show tools with active nav menu -------------------------------------------------------------------------
 
-$('.all-tools-section div').hide();
+$('.all-tools-section > div').hide();
 $("#icloud").fadeIn(650);
 $("#tabs li a").click(function () {
-  $('.all-tools-section div').hide();
+  $('.all-tools-section > div').hide();
   $(".menu-toggle #tabs li").removeClass('active');
   $(this).parent().addClass('active');
   $(this.getAttribute('href')).fadeIn(650);
-
-
 });
